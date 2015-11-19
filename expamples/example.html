@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="demo">
+            <datalist-component
+                :options="valueAndText"
+                :value-selected.sync="valueSelected">
+            </datalist-component> 
+            <span>Selected value is:</span>{{valueSelected}}                   
+        </div>
+    </body>
+    <script src="../vue.min.js"></script>
+    <script src="../dist/vue-datalist.js"></script>
+    <script src="./js/example.js"></script>
+</html>
