@@ -1,17 +1,8 @@
-(function(Vue) {
-    var root = typeof self == 'object' && self.self === self && self ||
-            typeof global == 'object' && global.global === global && global ||
-            this;
-
-    if (typeof exports != 'undefined' && !exports.nodeType) {
-        if (typeof module != 'undefined' && !module.nodeType && module.exports) {
-            exports = module.exports = VDatalist;
-        }
-        exports.VDatalist = VDatalist;
-    } else {
-        root.VDatalist = VDatalist;
-    }
-
+(function(global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    global.VDatalist = factory()
+}(this, function() {
     function VDatalist(args) {
         if (args) {
             this.create(args);
@@ -47,4 +38,6 @@
 
         Vue.component(args.component, DatalistComponent);
     };
-})(Vue);
+
+    return VDatalist;
+}));
