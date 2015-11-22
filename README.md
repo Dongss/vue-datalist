@@ -40,4 +40,4 @@ then get
 
 ![demo](./images/demo-1.gif)
 
-[example](https://github.com/Dongss/vue-datalist/blob/master/expamples/example.html)
+[example](http://dongss.github.io/vue-datalist/examples/example.html)
